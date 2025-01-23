@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,7 +20,12 @@ public class PlayerMovement : MonoBehaviour
 
     public int jumpHeight = 1000;
     public LayerMask platformLayer;
-
+    
+    // unity events
+    // i added these here for my ease - Lydia
+    public UnityEvent onLandEvent;
+    public UnityEvent onSlamEvent;
+    
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -48,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void slamHandler(){
         if(Input.GetKeyDown(KeyCode.LeftShift) && !grounded && !slam){
+            onSlamEvent.Invoke();
             slam = true;
             rb.sharedMaterial = bounceMaterial;
             rb.AddForce(new Vector2(0f,-400f));
@@ -75,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Check for ground below player 
         if(floorCheck.collider != null){
+            onLandEvent.Invoke();
             grounded = true;
         }else{
             grounded = false;
