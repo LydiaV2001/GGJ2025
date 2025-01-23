@@ -7,6 +7,9 @@ namespace UI
 {
     public class BubbleHud : MonoBehaviour
     {
+        // show HUD
+        public bool showHud = true;
+        
         // hud element
         public TMP_Text bubbleText;
         public Vector2 screenPoint;
@@ -15,7 +18,15 @@ namespace UI
         // player
         public GameObject player;
         public PlayerHealth playerHealth;
-        
+
+        private void Start()
+        {
+            if (!showHud)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+
         private void Update()
         {
             // get screenpoint of player object
