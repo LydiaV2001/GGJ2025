@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4552363404536819136, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: orthographic size
-      value: 6.9568267
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4927074791305760146, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Follow: {fileID: 752185096}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.9568267
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1159,18 +1159,18 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0.5
   m_LookaheadIgnoreY: 1
   m_XDamping: 1
-  m_YDamping: 0
+  m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneHeight: 1
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneHeight: 1
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
