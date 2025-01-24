@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
     // i added these here for my ease - Lydia
     public UnityEvent onLandEvent;
     public UnityEvent onSlamEvent;
-    public UnityEvent onJumpEvent;
+    [FormerlySerializedAs("onJumpEvent")] public UnityEvent onJumpingEvent;
+    public UnityEvent onJumpStartEvent;
     
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -86,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             onLandEvent.Invoke();
             grounded = true;
         }else{
-            onJumpEvent.Invoke();
+            onJumpingEvent.Invoke();
             grounded = false;
         }
 
