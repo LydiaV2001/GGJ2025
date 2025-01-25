@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // i added these here for my ease - Lydia
     public UnityEvent onLandEvent;
     public UnityEvent onSlamEvent;
-    public UnityEvent onJumpEvent;
+    public UnityEvent onJumpingEvent;
     
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             
         } else {
             if (grounded) {
-                onJumpEvent.Invoke();
+                onJumpingEvent.Invoke();
                 Invoke("groundPlayer", 0.15f);
             }
         }
