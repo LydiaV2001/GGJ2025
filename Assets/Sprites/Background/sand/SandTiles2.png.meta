@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7288d9f7567720a40a20cf44eea73272
+guid: b59170690fccd5b48a71c0c27e664e19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sand_tiles-_0
+      name: SandTiles2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7178161cb23cbe14ea5a978e22bdb855
-      internalID: 1502323316
+      spriteID: ca3e7e8e45106e24f9462179645f3422
+      internalID: 218417325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_1
+      name: SandTiles2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075eaaa27ffffa34a9b032544d631763
-      internalID: -166748455
+      spriteID: 0d0e0f1837df673458d3887b00537655
+      internalID: 993381018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_2
+      name: SandTiles2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76e7f5d07283a2d46b1b14519d103882
-      internalID: 1455557451
+      spriteID: f440c82eaf40e0549a7d5348ddd33188
+      internalID: 1660954945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_3
+      name: SandTiles2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbed94aebde4ac2419ca926a5161e1af
-      internalID: -266227952
+      spriteID: 515d55874311121439c60da38737b949
+      internalID: -2137377614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_4
+      name: SandTiles2_4
       rect:
         serializedVersion: 2
         x: 16
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2417b1dca93c3104882df49b1ad8090d
-      internalID: -1643871479
+      spriteID: 4bc6a91a557a7a34bb8ed2de0f0bf9f4
+      internalID: -1761444290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_5
+      name: SandTiles2_5
       rect:
         serializedVersion: 2
         x: 32
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0c13daf0bb482b4aa00efb03af862cb
-      internalID: -1242206598
+      spriteID: f22ed0665c1bbcc4ca3d7dea4f977c53
+      internalID: 11319726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_6
+      name: SandTiles2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfb8b7b8344b814ba52e850c3990575
-      internalID: -783421876
+      spriteID: f9624b232ec2cf84fa2be9bc51d9ccff
+      internalID: 552083071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_7
+      name: SandTiles2_7
       rect:
         serializedVersion: 2
         x: 16
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 061fd442764d84341b8c3c873cbec819
-      internalID: -1154181343
+      spriteID: d92dc75b3551697498ec3f3d0dd52951
+      internalID: -10937857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_8
+      name: SandTiles2_8
       rect:
         serializedVersion: 2
         x: 32
@@ -305,14 +305,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a528ebaa272284983c6a5539c57ce1
-      internalID: 1541727618
+      spriteID: 80800c8bc2f9d6042a766c52e553d617
+      internalID: 311511936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_9
+      name: SandTiles2_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd1c4bb7219b004ca5b9d62970c1f16
+      internalID: 217171699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles2_10
       rect:
         serializedVersion: 2
         x: 0
@@ -326,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbdb782ff06d6148ba229d193998438
-      internalID: -851240550
+      spriteID: df184bc3a18446e4881a9fe5c8560fae
+      internalID: 940170415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_10
+      name: SandTiles2_11
       rect:
         serializedVersion: 2
         x: 16
@@ -347,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44bd954a1ec42604a91446ee9857e650
-      internalID: -541303802
+      spriteID: 8df51ab0723a7594bba7bd8e5d61ad56
+      internalID: -504790883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_11
+      name: SandTiles2_12
       rect:
         serializedVersion: 2
         x: 32
@@ -368,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef73482fd2520d240a86bfa5dbc544c3
-      internalID: 621437854
+      spriteID: ac06ab03427188145b3b5228fadd5bf6
+      internalID: -1253312784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sand_tiles-_12
+      name: SandTiles2_13
       rect:
         serializedVersion: 2
         x: 0
@@ -389,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bad52e6b8575d9541b695f20831af96f
-      internalID: 411274698
+      spriteID: d1da65bf0ba57164d942c1d604af6a11
+      internalID: 91377352
       vertices: []
       indices: 
       edges: []
@@ -406,19 +427,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sand_tiles-_0: 1502323316
-      Sand_tiles-_1: -166748455
-      Sand_tiles-_10: -541303802
-      Sand_tiles-_11: 621437854
-      Sand_tiles-_12: 411274698
-      Sand_tiles-_2: 1455557451
-      Sand_tiles-_3: -266227952
-      Sand_tiles-_4: -1643871479
-      Sand_tiles-_5: -1242206598
-      Sand_tiles-_6: -783421876
-      Sand_tiles-_7: -1154181343
-      Sand_tiles-_8: 1541727618
-      Sand_tiles-_9: -851240550
+      SandTiles2_0: 218417325
+      SandTiles2_1: 993381018
+      SandTiles2_10: 940170415
+      SandTiles2_11: -504790883
+      SandTiles2_12: -1253312784
+      SandTiles2_13: 91377352
+      SandTiles2_2: 1660954945
+      SandTiles2_3: -2137377614
+      SandTiles2_4: -1761444290
+      SandTiles2_5: 11319726
+      SandTiles2_6: 552083071
+      SandTiles2_7: -10937857
+      SandTiles2_8: 311511936
+      SandTiles2_9: 217171699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

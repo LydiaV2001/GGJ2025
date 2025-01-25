@@ -5,6 +5,7 @@ using UnityEngine;
 public class FishDefault : MonoBehaviour
 {
     public float speed;
+    public FishData data;
 
     //These must me empty objects attatched to the enemy
     Transform pointA;
