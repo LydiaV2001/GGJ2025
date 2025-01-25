@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalSpeed = 1f;
     float verticalSpeed = 1f;
 
-    public GameObject particlePrefab;
+    public GameObject dustPrefab;
+    public GameObject bubbleTrailPrefab;
     public Transform particleSpawnPoint;
     public PhysicsMaterial2D bounceMaterial;
     public PhysicsMaterial2D defaultMaterial;
@@ -61,6 +62,9 @@ public class PlayerMovement : MonoBehaviour
             slam = true;
             rb.sharedMaterial = bounceMaterial;
             rb.AddForce(new Vector2(0f,-400f));
+            if (bubbleTrailPrefab != null) {
+                Instantiate(bubbleTrailPrefab, transform);
+            }
         }
     }
 
@@ -99,8 +103,8 @@ public class PlayerMovement : MonoBehaviour
             onLandEvent.Invoke();
             if (!grounded) {
                 // Spawn Particles
-                if (particlePrefab != null && particleSpawnPoint != null) {
-                    Instantiate(particlePrefab, particleSpawnPoint.position, Quaternion.identity);
+                if (dustPrefab != null && particleSpawnPoint != null) {
+                    Instantiate(dustPrefab, particleSpawnPoint.position, Quaternion.identity);
                 }
                 grounded = true;
             }

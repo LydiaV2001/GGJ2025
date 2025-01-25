@@ -180,7 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4374485839748252225}
   speed: 5
-  particlePrefab: {fileID: 1336392723772845845, guid: 132e9e48878588f4abaf97bfa4315af6, type: 3}
+  dustPrefab: {fileID: 1336392723772845845, guid: 132e9e48878588f4abaf97bfa4315af6, type: 3}
+  bubbleTrailPrefab: {fileID: 7823320683784250778, guid: 91ed87eca854ccf47a04b77860ed13f8, type: 3}
   particleSpawnPoint: {fileID: 1999650281504379158}
   bounceMaterial: {fileID: 6200000, guid: 572de2cea96da9142aaaea990150c741, type: 2}
   defaultMaterial: {fileID: 6200000, guid: 6cdd4eb933b5de744bd956e8dc5f1672, type: 2}
