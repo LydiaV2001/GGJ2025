@@ -4622,6 +4622,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2440608739432975163, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374485839748252225, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8900900848477501349, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: healthDecayRate
       value: 0
