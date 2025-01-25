@@ -18,9 +18,6 @@ public class FishDetector : MonoBehaviour
 
         canPickUpFish = false;
     }
-    public bool getCanPickUpFish(){
-        return canPickUpFish;
-    }
 
     // Update is called once per frame
 

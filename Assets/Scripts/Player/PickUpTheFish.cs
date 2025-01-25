@@ -21,13 +21,13 @@ public class PickUpTheFish : MonoBehaviour
             }
         }
     }
-    public void gamePause(){
+    public void onPickUpPause(){
         Time.timeScale = 0;
         isPaused = true;
         Debug.Log("paused");
         youFoundAFish.SetActive(true);
     }
-    public void gameResume(){
+    public void onPickUpResume(){
         Time.timeScale = 1;
         isPaused = false;
         Debug.Log("resumed");
@@ -35,10 +35,10 @@ public class PickUpTheFish : MonoBehaviour
     }
     public void pickUp(){
         if(isPaused){
-            gameResume();
+            onPickUpResume();
         }
         else{
-            gamePause();
+            onPickUpPause();
         }
         
     }
