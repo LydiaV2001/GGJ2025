@@ -2,24 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clickResponse : MonoBehaviour
+public class PickUpTheFish : MonoBehaviour
 {
     public GameObject youFoundAFish;
     bool isPaused;
+    FishDetector fishDetector;
+    
     // Start is called before the first frame update
     
     public void Start(){
-        
-       
+        GameObject FishTriggerObject = GameObject.Find("FishTrigger");
+        fishDetector = FishTriggerObject.GetComponent<FishDetector>();
     }
     public void Update(){
-        
-        if(Input.GetKeyDown("e")){
-            if(isPaused){
-                gameResume();
-            }
-            else{
-                gamePause();
+        if(fishDetector.canPickUpFish){
+            if(Input.GetKeyDown("e")){
+                pickUp();
             }
         }
     }
@@ -34,5 +32,14 @@ public class clickResponse : MonoBehaviour
         isPaused = false;
         Debug.Log("resumed");
         youFoundAFish.SetActive(false);
+    }
+    public void pickUp(){
+        if(isPaused){
+            gameResume();
+        }
+        else{
+            gamePause();
+        }
+        
     }
 }

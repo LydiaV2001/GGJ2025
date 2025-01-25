@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void slamHandler(){
-        if(Input.GetKeyDown(KeyCode.LeftShift) && !grounded && !slam){
+        if(Input.GetKeyDown("s") && !grounded && !slam){
             slam = true;
             rb.sharedMaterial = bounceMaterial;
             rb.AddForce(new Vector2(0f,-400f));
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
     void jumpHandler(){
         // If player can jump
-        if(Input.GetKeyDown("space") && grounded){
+        if(Input.GetKeyDown("w") && grounded){
             rb.AddForce(new Vector2(0,jumpHeight));
             grounded = false;
         }
