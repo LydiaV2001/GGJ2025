@@ -77,7 +77,6 @@ namespace Enemies
         {
             if (other.CompareTag("Player"))
             {
-                Debug.Log("EXIT!!!!");
                 GetComponent<FishDefault>().enabled = true;
             }
         }
