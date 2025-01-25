@@ -183,6 +183,15 @@ MonoBehaviour:
   platformLayer:
     serializedVersion: 2
     m_Bits: 8
+  onLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onSlamEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onJumpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1401167372838905611
 Animator:
   serializedVersion: 5
