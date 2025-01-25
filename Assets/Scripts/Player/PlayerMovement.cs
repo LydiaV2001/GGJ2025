@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalSpeed = 1f;
     float verticalSpeed = 1f;
 
-
+    public GameObject particlePrefab;
+    public Transform particleSpawnPoint;
     public PhysicsMaterial2D bounceMaterial;
     public PhysicsMaterial2D defaultMaterial;
     private SpriteRenderer spriteRenderer;
@@ -96,8 +97,15 @@ public class PlayerMovement : MonoBehaviour
         // Check for ground below player 
         if(floorCheckL.collider != null || floorCheckR.collider != null){
             onLandEvent.Invoke();
-            grounded = true;
-        }else{
+            if (!grounded) {
+                // Spawn Particles
+                if (particlePrefab != null && particleSpawnPoint != null) {
+                    Instantiate(particlePrefab, particleSpawnPoint.position, Quaternion.identity);
+                }
+                grounded = true;
+            }
+            
+        } else {
             if (grounded) {
                 onJumpEvent.Invoke();
                 Invoke("groundPlayer", 0.15f);
