@@ -25,7 +25,8 @@ namespace Player
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                transform.position = new Vector3(-4, 4, 0);
+                currentHealth = startingHealth;
             }
         }
 
