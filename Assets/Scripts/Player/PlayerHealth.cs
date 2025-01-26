@@ -28,8 +28,7 @@ namespace Player
             }
             else
             {
-                transform.position = new Vector3(-4, 4, 0);
-                currentHealth = startingHealth;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
 
             scaleBubble();
