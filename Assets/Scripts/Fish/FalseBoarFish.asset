@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: FalseBoarFish
   m_EditorClassIdentifier: 
-  description: Fish
+  description: "\u201CThe false boarfish is a deep-sea fish with a bright orange
+    body and sharp, spiny fins. They live in the Atlantic Ocean at depths of 200
+    to 1,000 meters, feeding on plankton and small fish larvae. Despite their name,
+    they\u2019re not related to true boarfish\u2014they got the \"false\" part because
+    they look similar, but are quite different. While not endangered, they are tricky
+    to study due to their deep-water home.\u201D"
   image: {fileID: 2800000, guid: 1edf9a77bd29668448bd37e59e62d12a, type: 3}
   width: 450
   height: 450

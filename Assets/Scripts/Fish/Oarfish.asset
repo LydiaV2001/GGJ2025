@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Oarfish
   m_EditorClassIdentifier: 
-  description: Hi, I'm an Oarfish :)
+  description: "\u201COarfish are long, ribbon-like fish that can grow up to 36 feet.
+    They\u2019re known as the \u201Cking of herrings\u201D because of their huge
+    size. These fish live in deep ocean waters and have a silvery appearance that
+    helps them blend in. Oarfish eat plankton, floating in the water, and can be
+    seen swimming vertically. Despite their size, they\u2019re not a threat to humans
+    and are rarely seen.\u201D"
   image: {fileID: 2800000, guid: 807f7b5d8bbaec44baae08a782326980, type: 3}
   width: 450
   height: 200

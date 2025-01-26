@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Squid
   m_EditorClassIdentifier: 
-  description: Squid
+  description: 'Vampire Squid (Vampyroteuthis infernalis) Despite its name, the vampire
+    squid does not suck blood. It lives in deep, oxygen-poor waters of the Atlantic,
+    where it survives by feeding on marine snow. With glowing blue eyes and webbed
+    arms, the vampire squid uses bioluminescence to communicate and confuse predators. '
   image: {fileID: 2800000, guid: 5f8a61ee0264cd54dbde30c10b70cf96, type: 3}
   width: 450
   height: 450

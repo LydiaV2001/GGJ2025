@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Angler
   m_EditorClassIdentifier: 
-  description: Angler
+  description: "Anglerfish are deep-sea predators that use a glowing lure on top
+    of their heads to attract prey in the dark waters of the ocean. They are found
+    in both the Atlantic and Pacific Oceans. These fish are known for their large
+    mouths and sharp teeth. Fun Fact:  Anglerfish females are the real stars\u2014they\u2019re
+    much bigger than the males, who just latch on like a clingy roommate!"
   image: {fileID: 2800000, guid: c707055f3501dc54ab4347c68792dca3, type: 3}
   width: 450
   height: 450

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Crab
   m_EditorClassIdentifier: 
-  description: "Hermit crabs are the ultimate recyclers of the sea, always on the
-    lookout for a new shell home. They scuttle around, sometimes \u201Ctrying on\u201D
-    shells like a shopper in a store.  Some species of hermit crabs \"decorate\"
-    their shells with sea anemones for extra defense! "
+  description: "These crabs live in shallow waters along the Atlantic coasts, where
+    they hide in shells to protect their soft abdomen. They\u2019re omnivores, eating
+    algae, small invertebrates, and detritus. Hermit crabs aren\u2019t predators,
+    but some species decorate their shells with sea anemones for extra protection
+    from fish.\u201D"
   image: {fileID: 2800000, guid: 90b03340d07212e41afef9e6f848a168, type: 3}
   width: 384
   height: 384

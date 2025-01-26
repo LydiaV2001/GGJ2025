@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Dolphin
   m_EditorClassIdentifier: 
-  description: Dolphin
+  description: Dolphins are playful, social mammals that live in the Atlantic and
+    other oceans. They are known for their acrobatics and intelligence, as well as
+    their complex communication skills. Dolphins live in groups called pods and work
+    together to hunt fish and squid. These creatures are not just intelligent but
+    also have a strong sense of social bonds.
   image: {fileID: 2800000, guid: 6cf19274e03c83c4596f3ea3a2390726, type: 3}
   width: 450
   height: 450

@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Blobfish
   m_EditorClassIdentifier: 
-  description: The Blobfish is a very sexy fish
+  description: "\u201CBlobfish are often called the \u201Cugliest fish\u201D in the
+    world, but that\u2019s not really fair. When they\u2019re brought to the surface,
+    their soft, gelatinous body turns into a blob. But in their natural environment,
+    blobfish look more like regular fish.\u201D"
   image: {fileID: 2800000, guid: 8741a8ceb3fb6c44ab85243186ef70e5, type: 3}
   width: 384
   height: 384

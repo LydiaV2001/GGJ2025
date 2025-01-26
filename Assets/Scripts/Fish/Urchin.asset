@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Urchin
   m_EditorClassIdentifier: 
-  description: Urchin
+  description: " \"Sea urchins are like the hedgehogs of the ocean! They\u2019re
+    covered in spines to protect themselves, but they\u2019re also essential for
+    keeping the ocean floor clean. They play a crucial role in keeping kelp forests
+    healthy by controlling algae growth. However, if there are too many, sea urchins
+    can damage these ecosystems by overgrazing.\u201D"
   image: {fileID: 2800000, guid: b25eca6785867e2409bfdadb4d32c2e8, type: 3}
   width: 450
   height: 450
