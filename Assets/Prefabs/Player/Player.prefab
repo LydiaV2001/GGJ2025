@@ -195,7 +195,7 @@ MonoBehaviour:
   onSlamEvent:
     m_PersistentCalls:
       m_Calls: []
-  onJumpEvent:
+  onJumpingEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!95 &1401167372838905611
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   startingHealth: 10
-  healthDecayRate: 0
+  healthDecayRate: 1
   currentHealth: 0
 --- !u!114 &-9119099326081306147
 MonoBehaviour:

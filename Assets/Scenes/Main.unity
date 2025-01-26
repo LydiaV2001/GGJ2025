@@ -4630,10 +4630,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8900900848477501349, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
-      propertyPath: healthDecayRate
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2159611343039454599, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
