@@ -1,26 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AnglerAttack : MonoBehaviour
 {
-    private Animator animator;
-    private Rigidbody2D rb;
+    private static readonly int attacking = Animator.StringToHash("isAttacking");
+
+    public float puffUpInterval = 0.85f;
+    public float puffDownInterval = 2f;
+    public GameObject hitbox;
     
-    // Start is called before the first frame update
-    void Start()
+    private float timer;
+    private Animator animator;
+    
+    private void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        hitbox.SetActive(false);
     }
 
-    void Update(){
-
+    void Update()
+    {
+       PuffUp();
     }
 
-    void detectPlayer(){
-        float rayDistance = 4f;
+    void PuffUp()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= puffUpInterval + puffDownInterval)
+        {
+            animator.SetBool(attacking, false);
+            hitbox.SetActive(false);
+            timer = 0f;
+        }
+        else if (timer >= puffUpInterval)
+        {
+            animator.SetBool(attacking, true);
+            hitbox.SetActive(true);
+        }
+        
     }
-
-
 }
+
