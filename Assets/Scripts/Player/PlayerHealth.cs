@@ -11,10 +11,13 @@ namespace Player
         public float startingHealth;
         public float healthDecayRate;
         public float currentHealth;
+
+        Transform bubbleTransform;
         
         void Start()
         {
             currentHealth = startingHealth;
+            bubbleTransform = GameObject.Find("Bubble").transform;
         }
 
         void Update()
@@ -28,6 +31,8 @@ namespace Player
                 transform.position = new Vector3(-4, 4, 0);
                 currentHealth = startingHealth;
             }
+
+            scaleBubble();
         }
 
         public void IncreaseHealth(float amount)
@@ -48,6 +53,12 @@ namespace Player
                 currentHealth = 0;
             }
             
+        }
+
+        void scaleBubble(){
+            // Linear equation, bubble will be 0.8 scale at 0 health, 2 at max health
+            float scale = 0.8f + (1.2f/maxHealth * currentHealth);
+            bubbleTransform.localScale = new Vector3(scale, scale, 1);
         }
     }
 }
