@@ -165,7 +165,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6833467}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.1
 --- !u!114 &2550153368777330973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +179,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4374485839748252225}
-  speed: 5
+  maxSpeed: 10
+  slamSpeed: {x: 30, y: -40}
+  groundAcc: 4
+  airAcc: 0.75
   dustPrefab: {fileID: 1336392723772845845, guid: 132e9e48878588f4abaf97bfa4315af6, type: 3}
   bubbleTrailPrefab: {fileID: 7823320683784250778, guid: 91ed87eca854ccf47a04b77860ed13f8, type: 3}
   particleSpawnPoint: {fileID: 1999650281504379158}
@@ -233,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   startingHealth: 10
-  healthDecayRate: 1
+  healthDecayRate: 0
   currentHealth: 0
 --- !u!114 &-9119099326081306147
 MonoBehaviour:
@@ -329,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishImageBackground: {fileID: 0}
+  clipboardUI: {fileID: 0}
 --- !u!50 &2718768440937843262
 Rigidbody2D:
   serializedVersion: 4
