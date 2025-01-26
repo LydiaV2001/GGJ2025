@@ -8,26 +8,15 @@ public class EscMenu : MonoBehaviour
 {
     public GameObject escMenuObject;
     bool isPaused;
-    bool rPresed;
-    GameObject oarfishImageObject;
-    Image oarfishImage;
    
 
     void Start(){
         isPaused = false;
-        rPresed = false;
-        oarfishImageObject = escMenuObject.transform.Find("oarfishImage").gameObject;
-        oarfishImage = oarfishImageObject.GetComponent<Image>();
     }
 
 
     void Update(){
         pressEsc();
-        if(Input.GetKeyDown("r")){
-            rPresed = true;
-            Debug.Log("R!!");
-        }
-        updateFishCollection();
     }
 
 
@@ -70,9 +59,4 @@ public class EscMenu : MonoBehaviour
     }
 
 
-    void updateFishCollection(){
-        if(rPresed){
-            oarfishImage.color = Color.red;
-        }
-    }
 }

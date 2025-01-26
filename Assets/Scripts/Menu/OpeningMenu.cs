@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class OpeningMenu : MonoBehaviour
 {
-    public GameObject OptionBoxPanel;
     
     public void onClickPLay(){
-        SceneManager.LoadScene("Libertes Main");
+        SceneManager.LoadScene("Main");
     }
 
     public void onClickQuit(){
@@ -17,10 +16,9 @@ public class OpeningMenu : MonoBehaviour
     }
 
     public void onClickTutorialButton(){
-        SceneManager.LoadScene("TutorialScene");
+        Debug.Log("Loaded tutorial scene");
     }
 
-    //option box button
     
 
 }
