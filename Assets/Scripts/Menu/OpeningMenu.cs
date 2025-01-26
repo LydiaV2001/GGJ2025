@@ -10,7 +10,7 @@ public class OpeningMenu : MonoBehaviour
     public TextMeshProUGUI jumpButtonText;
     public TextMeshProUGUI bounceButtonText;
     public void onClickPLay(){
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Cutscene");
     }
 
 
@@ -18,9 +18,6 @@ public class OpeningMenu : MonoBehaviour
         Application.Quit();
     }
     
-    public void returnToMenu(){
-        SceneManager.LoadScene("MainMenu");
-    }
 
     public void onClickTutorialButton(){
         SceneManager.LoadScene("Tutorial");
