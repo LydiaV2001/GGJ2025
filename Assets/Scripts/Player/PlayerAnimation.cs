@@ -19,6 +19,7 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         jumpAnimation();
+        moveAnimation();
     }
 
     void jumpAnimation(){
@@ -28,10 +29,18 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool("jumping", false);
         }
 
-        if(rb.velocity.y < -0.01){
+        if(rb.velocity.y < -0.05){
             animator.SetBool("falling", true);
         }else{
             animator.SetBool("falling", false);
+        }
+    }
+    
+    void moveAnimation(){
+        if(Mathf.Abs(rb.velocity.x) > 0.01f) {
+            animator.SetBool("walking", true);
+        }else {
+            animator.SetBool("walking", false);
         }
     }
 }

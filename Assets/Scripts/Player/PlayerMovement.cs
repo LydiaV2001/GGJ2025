@@ -6,12 +6,18 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed = 5f;
+    public float maxSpeed = 0.0001f;
+    public Vector2 slamSpeed = new Vector2(0.001f, -0.002f);
+    public float groundAcc = 4f;
+    public float airAcc = .5f;
     float horizontalSpeed = 1f;
     float verticalSpeed = 1f;
+    
+    float acc = 4f;
 
     public GameObject dustPrefab;
     public GameObject bubbleTrailPrefab;
+    public AudioSource slamSound; 
     public Transform particleSpawnPoint;
     public PhysicsMaterial2D bounceMaterial;
     public PhysicsMaterial2D defaultMaterial;
@@ -61,10 +67,14 @@ public class PlayerMovement : MonoBehaviour
             onSlamEvent.Invoke();
             slam = true;
             rb.sharedMaterial = bounceMaterial;
-            rb.AddForce(new Vector2(0f,-400f));
+
+            Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), rb.velocity.y);
+            Vector2 target = new Vector2(direction.x*slamSpeed.x, slamSpeed.y);
+            rb.velocity = Vector2.Lerp(rb.velocity, target, 0.5f);
             if (bubbleTrailPrefab != null) {
                 Instantiate(bubbleTrailPrefab, transform);
             }
+            slamSound.Play();
         }
     }
 
@@ -106,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
                 if (dustPrefab != null && particleSpawnPoint != null) {
                     Instantiate(dustPrefab, particleSpawnPoint.position, Quaternion.identity);
                 }
+                acc = groundAcc;
                 grounded = true;
             }
             
@@ -113,15 +124,16 @@ public class PlayerMovement : MonoBehaviour
             if (grounded) {
                 onJumpingEvent.Invoke();
                 Invoke("groundPlayer", 0.15f);
+                acc = airAcc;
             }
         }
     }
 
     void handleMovement(){
-        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal") * speed, rb.velocity.y);
-        direction.x = direction.x * horizontalSpeed;
-        direction.y = direction.y * verticalSpeed;
-        rb.velocity = direction;
+        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), rb.velocity.y);
+        float targetX = maxSpeed * direction.x;
+        targetX = Mathf.Lerp(rb.velocity.x, targetX, acc*Time.deltaTime);
+        rb.velocity = new Vector2(targetX, rb.velocity.y);
     }
     
     void restoreBounce(){
