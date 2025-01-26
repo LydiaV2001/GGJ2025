@@ -9,6 +9,7 @@ public class FishFinder : MonoBehaviour
     
     // Set this to the ui background that the fish image will be on
     public GameObject fishImageBackground;
+    public GameObject clipboardUI;
 
     bool clipboardIsOpen = false;
 
@@ -36,7 +37,7 @@ public class FishFinder : MonoBehaviour
     void closeClipboard(){
         if(clipboardIsOpen){
             if(Input.GetKeyDown("e")){
-                fishImageBackground.SetActive(false);
+                clipboardUI.SetActive(false);
                 clipboardIsOpen = false;
                 Time.timeScale = 1;
             }
@@ -54,7 +55,7 @@ public class FishFinder : MonoBehaviour
             string description = fishScript.data.description;
             Texture2D fishPicture = fishScript.data.image;
 
-            fishImageBackground.SetActive(true);
+            clipboardUI.SetActive(true);
             Image fishImageComponent = fishImageBackground.GetComponent<Image>();
 
             if (fishImageComponent != null && fishPicture != null)
@@ -66,6 +67,14 @@ public class FishFinder : MonoBehaviour
 
                 // Set the Image component's sprite
                 fishImageComponent.sprite = fishSprite;
+
+                RectTransform fishImageRectTransform = fishImageBackground.GetComponent<RectTransform>();
+                if (fishImageRectTransform != null)
+                {
+                    // Resize the RectTransform to match the image's dimensions
+                    fishImageRectTransform.sizeDelta = new Vector2(fishScript.data.width, fishScript.data.height);
+                }
+
             }
 
         }
