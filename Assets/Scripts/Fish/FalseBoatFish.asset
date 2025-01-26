@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FalseBoatFish
   m_EditorClassIdentifier: 
   description: Fish
-  image: {fileID: 2800000, guid: df76c38234ae6de46bbf3d16bc633053, type: 3}
-  width: 300
-  height: 300
+  image: {fileID: 2800000, guid: 1edf9a77bd29668448bd37e59e62d12a, type: 3}
+  width: 450
+  height: 450
