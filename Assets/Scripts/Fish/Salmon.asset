@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
-  m_Name: Blobfish
+  m_Name: Salmon
   m_EditorClassIdentifier: 
-  description: The Blobfish is a very sexy fish
-  image: {fileID: 2800000, guid: 8741a8ceb3fb6c44ab85243186ef70e5, type: 3}
-  width: 384
-  height: 384
+  description: Salmon
+  image: {fileID: 2800000, guid: 17bd438a593affd4d9546f347f0eba4c, type: 3}
+  width: 450
+  height: 450
