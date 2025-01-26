@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 namespace GameManager
 {
     public static class FishManager
@@ -69,13 +68,8 @@ namespace GameManager
         private static void Victory()
         {
             Time.timeScale = 0;
-            DisplayLeaderboard();
+            SceneManager.LoadScene("End");
         }
 
-        private static void DisplayLeaderboard()
-        {
-            
-        }
-        
     }
 }
