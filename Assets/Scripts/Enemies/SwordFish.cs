@@ -32,7 +32,6 @@ namespace Enemies
             {
                 GetComponent<FishDefault>().enabled = false;
                 rigidbody2D.velocity = Vector2.zero;
-                spriteRenderer.flipX = false;
             }
             
         }
@@ -53,10 +52,12 @@ namespace Enemies
                     if (player.position.x < transform.position.x)
                     {
                         spriteRenderer.flipY = true;
+                        spriteRenderer.flipX = false;
                     }
                     else
                     {
                         spriteRenderer.flipY = false;
+                        spriteRenderer.flipX = false;
                     }
                 
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
