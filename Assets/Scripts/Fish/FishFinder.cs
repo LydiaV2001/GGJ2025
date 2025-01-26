@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameManager;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -17,6 +18,8 @@ public class FishFinder : MonoBehaviour
 
     bool clipboardIsOpen = false;
 
+    private FishDefault fishScript;
+    
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "Fish"){
             currentFish = collision.gameObject;
@@ -44,6 +47,7 @@ public class FishFinder : MonoBehaviour
                 closeFishUI();
                 clipboardIsOpen = false;
                 Time.timeScale = 1;
+                FishManager.CollectFish(fishScript.data.name);
             }
         }
     }
@@ -55,11 +59,11 @@ public class FishFinder : MonoBehaviour
             clipboardIsOpen = true;
 
             //Open UI to show fish info
-            FishDefault fishScript = currentFish.GetComponent<FishDefault>();
+            fishScript = currentFish.GetComponent<FishDefault>();
             
             string description = fishScript.data.description;
             Texture2D fishPicture = fishScript.data.image;
-
+            
             openFishUI();
             Image fishImageComponent = fishImageBackground.GetComponent<Image>();
             
