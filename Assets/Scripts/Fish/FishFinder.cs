@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class FishFinder : MonoBehaviour
 {
     GameObject currentFish;
@@ -10,6 +10,10 @@ public class FishFinder : MonoBehaviour
     // Set this to the ui background that the fish image will be on
     public GameObject fishImageBackground;
     public GameObject clipboardUI;
+
+    public GameObject fishDescriptionBackground;
+    public TextMeshProUGUI fishDescriptionText;
+    public GameObject playerIconBackground;
 
     bool clipboardIsOpen = false;
 
@@ -37,7 +41,7 @@ public class FishFinder : MonoBehaviour
     void closeClipboard(){
         if(clipboardIsOpen){
             if(Input.GetKeyDown("e")){
-                clipboardUI.SetActive(false);
+                closeFishUI();
                 clipboardIsOpen = false;
                 Time.timeScale = 1;
             }
@@ -52,11 +56,13 @@ public class FishFinder : MonoBehaviour
 
             //Open UI to show fish info
             FishDefault fishScript = currentFish.GetComponent<FishDefault>();
+            
             string description = fishScript.data.description;
             Texture2D fishPicture = fishScript.data.image;
 
-            clipboardUI.SetActive(true);
+            openFishUI();
             Image fishImageComponent = fishImageBackground.GetComponent<Image>();
+            
 
             if (fishImageComponent != null && fishPicture != null)
             {
@@ -67,6 +73,7 @@ public class FishFinder : MonoBehaviour
 
                 // Set the Image component's sprite
                 fishImageComponent.sprite = fishSprite;
+                fishDescriptionText.text = fishScript.data.description;
 
                 RectTransform fishImageRectTransform = fishImageBackground.GetComponent<RectTransform>();
                 if (fishImageRectTransform != null)
@@ -78,5 +85,17 @@ public class FishFinder : MonoBehaviour
             }
 
         }
+    }
+
+    void openFishUI(){
+        clipboardUI.SetActive(true);
+        fishDescriptionBackground.SetActive(true);
+        playerIconBackground.SetActive(true);
+    }
+
+    void closeFishUI(){
+        clipboardUI.SetActive(false);
+        fishDescriptionBackground.SetActive(false);
+        playerIconBackground.SetActive(false);
     }
 }
