@@ -56,6 +56,7 @@ public class FishFinder : MonoBehaviour
 
             //Open UI to show fish info
             FishDefault fishScript = currentFish.GetComponent<FishDefault>();
+            
             string description = fishScript.data.description;
             Texture2D fishPicture = fishScript.data.image;
 
