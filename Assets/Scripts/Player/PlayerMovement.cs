@@ -10,12 +10,15 @@ public class PlayerMovement : MonoBehaviour
     float horizontalSpeed = 1f;
     float verticalSpeed = 1f;
 
-
+    public GameObject dustPrefab;
+    public GameObject bubbleTrailPrefab;
+    public Transform particleSpawnPoint;
     public PhysicsMaterial2D bounceMaterial;
     public PhysicsMaterial2D defaultMaterial;
     private SpriteRenderer spriteRenderer;
     bool grounded = true;
     bool slam = false;
+    bool jumpBuffered = false;
 
 
     public int jumpHeight = 1000;
@@ -25,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // i added these here for my ease - Lydia
     public UnityEvent onLandEvent;
     public UnityEvent onSlamEvent;
-    public UnityEvent onJumpEvent;
+    public UnityEvent onJumpingEvent;
     
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -59,6 +62,9 @@ public class PlayerMovement : MonoBehaviour
             slam = true;
             rb.sharedMaterial = bounceMaterial;
             rb.AddForce(new Vector2(0f,-400f));
+            if (bubbleTrailPrefab != null) {
+                Instantiate(bubbleTrailPrefab, transform);
+            }
         }
     }
 
@@ -74,22 +80,41 @@ public class PlayerMovement : MonoBehaviour
 
     void jumpHandler(){
         // If player can jump
-        if(Input.GetKeyDown("space") && grounded){
-            rb.AddForce(new Vector2(0,jumpHeight));
-            grounded = false;
+        if(Input.GetKeyDown("space") || jumpBuffered){
+            if (grounded) {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+                rb.AddForce(new Vector2(0,jumpHeight));
+                jumpBuffered = false;
+                grounded = false;
+            }
+            else {
+                Invoke("debufferJump", 0.2f);
+                jumpBuffered = true;
+            }
         }
 
-        RaycastHit2D floorCheck = Physics2D.Raycast(transform.position, Vector2.down, 1f, platformLayer);
+        Vector3 checkOffset = new Vector3(0.45f, 0f, 0f);
+        float checkLength = .9f;
+        RaycastHit2D floorCheckL = Physics2D.Raycast(transform.position + checkOffset, Vector2.down, checkLength, platformLayer);
+        RaycastHit2D floorCheckR = Physics2D.Raycast(transform.position - checkOffset, Vector2.down, checkLength, platformLayer);
 
         // Check for ground below player 
-        if(floorCheck.collider != null){
+        if(floorCheckL.collider != null || floorCheckR.collider != null){
             onLandEvent.Invoke();
-            grounded = true;
-        }else{
-            onJumpEvent.Invoke();
-            grounded = false;
+            if (!grounded) {
+                // Spawn Particles
+                if (dustPrefab != null && particleSpawnPoint != null) {
+                    Instantiate(dustPrefab, particleSpawnPoint.position, Quaternion.identity);
+                }
+                grounded = true;
+            }
+            
+        } else {
+            if (grounded) {
+                onJumpingEvent.Invoke();
+                Invoke("groundPlayer", 0.15f);
+            }
         }
-
     }
 
     void handleMovement(){
@@ -114,6 +139,12 @@ public class PlayerMovement : MonoBehaviour
         }else if(rb.velocity.x > 0){
             spriteRenderer.flipX = false;
         }
+    }
+    void groundPlayer() {
+        grounded = false;
+    }
+    void debufferJump() {
+        jumpBuffered = false;
     }
 
 }

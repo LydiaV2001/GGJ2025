@@ -28,7 +28,7 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool("jumping", false);
         }
 
-        if(rb.velocity.y < -1){
+        if(rb.velocity.y < -0.01){
             animator.SetBool("falling", true);
         }else{
             animator.SetBool("falling", false);

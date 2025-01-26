@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
         componentBase = vcam.GetCinemachineComponent<CinemachineComponentBase>();
         
         // Add Event Listeners
-        player.onJumpEvent.AddListener(PlayerJump);
+        player.onJumpingEvent.AddListener(PlayerJump);
         player.onLandEvent.AddListener(PlayerLand);
     }
 
@@ -25,7 +25,6 @@ public class CameraController : MonoBehaviour
         if (componentBase is CinemachineFramingTransposer) {
             var framingTransposer = componentBase as CinemachineFramingTransposer;
             framingTransposer.m_DeadZoneHeight = 1f;
-            Debug.Log("Dead Zone Width Changed");
         }
     }
 
@@ -34,7 +33,6 @@ public class CameraController : MonoBehaviour
         if (componentBase is CinemachineFramingTransposer) {
             var framingTransposer = componentBase as CinemachineFramingTransposer;
             framingTransposer.m_DeadZoneHeight = 0f;
-            Debug.Log("Dead Zone Width Changed");
         }
     }
 }
