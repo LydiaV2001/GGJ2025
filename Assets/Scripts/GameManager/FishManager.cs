@@ -15,6 +15,7 @@ namespace GameManager
         public const string SQUID = "Squid";
         public const string URCHIN = "Urchin";
         public const string ANGLER = "Angler";
+        public const string 
         
         private static Dictionary<string, bool> FishFound = new Dictionary<string, bool>()
         {
@@ -40,6 +41,23 @@ namespace GameManager
             {
                 Debug.Log("Fish is not in Dictionary");
             }
+
+            if (FishFound[BLOBFISH])
+            {
+                Victory();
+            }
+            
+        }
+
+        private static void Victory()
+        {
+            Time.timeScale = 0;
+            DisplayLeaderboard();
+        }
+
+        private static void DisplayLeaderboard()
+        {
+            
         }
         
     }
