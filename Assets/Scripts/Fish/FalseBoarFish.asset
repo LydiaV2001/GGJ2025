@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
-  m_Name: test
+  m_Name: FalseBoarFish
   m_EditorClassIdentifier: 
-  description: This is a test, not a fish
-  image: {fileID: 2800000, guid: 79f934e98984bc641a6fe638ad66cf8a, type: 3}
+  description: Fish
+  image: {fileID: 2800000, guid: 1edf9a77bd29668448bd37e59e62d12a, type: 3}
+  width: 450
+  height: 450
