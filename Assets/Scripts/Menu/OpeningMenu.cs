@@ -18,6 +18,9 @@ public class OpeningMenu : MonoBehaviour
         Application.Quit();
     }
     
+    public void returnToMenu(){
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void onClickTutorialButton(){
         SceneManager.LoadScene("Tutorial");

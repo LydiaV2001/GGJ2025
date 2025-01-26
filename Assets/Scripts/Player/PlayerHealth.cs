@@ -13,9 +13,11 @@ namespace Player
         public float currentHealth;
 
         Transform bubbleTransform;
+        public GameObject gameOverUI;
         
         void Start()
         {
+            Time.timeScale = 1f;
             currentHealth = startingHealth;
             bubbleTransform = GameObject.Find("Bubble").transform;
         }
@@ -28,8 +30,8 @@ namespace Player
             }
             else
             {
-                transform.position = new Vector3(-4, 4, 0);
-                currentHealth = startingHealth;
+                Time.timeScale = 0f;
+                gameOverUI.SetActive(true);
             }
 
             scaleBubble();
