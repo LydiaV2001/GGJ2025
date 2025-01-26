@@ -7,7 +7,7 @@ using UnityEngine;
 public class Heal : MonoBehaviour
 {
 
-    public float healAmmount;
+    public float healAmount;
     PlayerHealth playerHealth;
     
     public new Collider2D collider2D;
@@ -29,7 +29,7 @@ public class Heal : MonoBehaviour
     {
         if (playerHealth != null)
         {
-            playerHealth.IncreaseHealth(healAmmount);
+            playerHealth.IncreaseHealth(healAmount);
             Destroy(gameObject);
         }
     }

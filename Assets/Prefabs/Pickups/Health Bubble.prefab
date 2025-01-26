@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5035ad393d7ea845896fa245aa0006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmmount: 5
+  healAmount: 10
   collider2D: {fileID: 1811916254023972092}
 --- !u!212 &5206230473709281256
 SpriteRenderer:
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f70302d5011a4424d90892b017dd981d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
