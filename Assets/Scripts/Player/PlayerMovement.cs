@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
     public UnityEvent onLandEvent;
     public UnityEvent onSlamEvent;
     public UnityEvent onJumpingEvent;
+
+    //key binding practices.
+    public static KeyCode jumpKey = KeyCode.Space;
+    public static KeyCode bounceKey = KeyCode.LeftShift;
+
     
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -63,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void slamHandler(){
-        if(Input.GetKeyDown(KeyCode.LeftShift) && !grounded && !slam){
+        if(Input.GetKeyDown(bounceKey) && !grounded && !slam){
             onSlamEvent.Invoke();
             slam = true;
             rb.sharedMaterial = bounceMaterial;
@@ -90,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     void jumpHandler(){
         // If player can jump
-        if(Input.GetKeyDown("space") || jumpBuffered){
+        if(Input.GetKeyDown(jumpKey) || jumpBuffered){
             if (grounded) {
                 rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(new Vector2(0,jumpHeight));
