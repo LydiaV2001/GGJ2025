@@ -16,13 +16,11 @@ public class OpeningMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void onClickOptions(){
-        OptionBoxPanel.SetActive(true);
+    public void onClickTutorialButton(){
+        SceneManager.LoadScene("TutorialScene");
     }
 
     //option box button
-    public void onClickCloseOptionPanel(){
-        OptionBoxPanel.SetActive(false);
-    }
+    
 
 }
