@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6517798605920245104}
   m_Layer: 0
   m_Name: fishBody
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 1a4db7341995dc841bfb775803034011, type: 2}
+  isUrchin: 0
 --- !u!50 &8193048619309753010
 Rigidbody2D:
   serializedVersion: 4

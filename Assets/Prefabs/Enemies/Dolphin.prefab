@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 8521054659497205032}
   m_Layer: 0
   m_Name: fishBody
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: d3c961d0ded9e8942903b68a3f505012, type: 2}
+  isUrchin: 0
 --- !u!50 &8193048619309753010
 Rigidbody2D:
   serializedVersion: 4
@@ -309,7 +310,7 @@ GameObject:
   - component: {fileID: 5449615683053807236}
   m_Layer: 0
   m_Name: Dolphin
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
