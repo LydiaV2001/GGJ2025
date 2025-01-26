@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Snail
   m_EditorClassIdentifier: 
-  description: Snail
+  description: "\u201CMoon snails are predatory sea snails with big, smooth shells
+    and a large foot they use to move around. They live in shallow waters along the
+    Atlantic coast, where they hunt other mollusks like clams and mussels. Moon snails
+    are like underwater dentists! They use their radula to drill perfectly round
+    holes in their prey\u2019s shells.\u201D"
   image: {fileID: 2800000, guid: e3281bcf904c72848bbc8ae2fe5363e7, type: 3}
   width: 450
   height: 450

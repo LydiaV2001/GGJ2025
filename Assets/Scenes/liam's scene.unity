@@ -4809,7 +4809,7 @@ PrefabInstance:
       objectReference: {fileID: 9054028814362559115}
     - target: {fileID: 2131983418210131299, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.68
+      value: -7.81
       objectReference: {fileID: 0}
     - target: {fileID: 2131983418210131299, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5232,6 +5232,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4022753244737865634, guid: 2789276107f171d41a90cdb02e725534, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190916189100781942, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_text
+      value: Pufferfish are quirky fish that puff up into a spiky ball when threatened.
+        Found in the Atlantic and Pacific oceans, many species have a powerful toxin
+        inside them called tetrodotoxin, which is more poisonous than cyanide. Pufferfish
+        are herbivores, eating algae and small invertebrates. Although dangerous,
+        they are considered a delicacy in Japan, where only trained chefs can prepare
+        them safely
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190916189100781942, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190916189100781942, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658894132129256886, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185173926042169396, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8464176848595566377, guid: 2789276107f171d41a90cdb02e725534, type: 3}

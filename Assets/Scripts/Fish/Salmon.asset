@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Salmon
   m_EditorClassIdentifier: 
-  description: Salmon
+  description: "\u201CAtlantic salmon are famous for their incredible migrations.
+    Born in freshwater rivers, these fish travel all the way to the ocean, then return
+    to spawn. As predators, they mainly feed on smaller fish, insects, and crustaceans.
+    Unfortunately, Atlantic salmon are endangered in many parts of their range due
+    to overfishing, pollution, and habitat loss.\u201D"
   image: {fileID: 2800000, guid: 17bd438a593affd4d9546f347f0eba4c, type: 3}
   width: 450
   height: 450

@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Swordfish
   m_EditorClassIdentifier: 
-  description: Swordfish
+  description: 'Swordfish are fast, powerful swimmers found in the Atlantic Ocean.
+    They have long, flat bills shaped like swords, which they use to slash through
+    schools of fish. These fish are skilled predators, feeding on smaller fish and
+    squid. Fun Fact:  "Swordfish are like underwater ninjas! They can heat their
+    eyes, making it easier to see in the dark, cold waters."'
   image: {fileID: 2800000, guid: 6870d99f0ca08ec4bad6ae5866b6b37a, type: 3}
   width: 450
   height: 450
