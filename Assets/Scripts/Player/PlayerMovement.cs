@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject dustPrefab;
     public GameObject bubbleTrailPrefab;
+    public AudioSource slamSound; 
     public Transform particleSpawnPoint;
     public PhysicsMaterial2D bounceMaterial;
     public PhysicsMaterial2D defaultMaterial;
@@ -73,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             if (bubbleTrailPrefab != null) {
                 Instantiate(bubbleTrailPrefab, transform);
             }
+            slamSound.Play();
         }
     }
 
