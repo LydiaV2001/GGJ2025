@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1bb02a9507fc14db741d94882df3e0, type: 3}
   m_Name: Angler
   m_EditorClassIdentifier: 
-  description: 
-  image: {fileID: 0}
-  width: 0
-  height: 0
+  description: Angler
+  image: {fileID: 2800000, guid: 8741a8ceb3fb6c44ab85243186ef70e5, type: 3}
+  width: 450
+  height: 450
