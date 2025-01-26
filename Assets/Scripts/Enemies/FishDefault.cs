@@ -14,6 +14,8 @@ public class FishDefault : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
 
+    public bool isUrchin = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,15 +23,18 @@ public class FishDefault : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        Transform parent = gameObject.transform.parent;
-        pointA = parent.Find("PointA");
-        pointB = parent.Find("PointB");
 
-        if(pointA == null || pointB == null){
-            Debug.LogError("Enemy is missing destination points");
+        if(isUrchin == false){
+            Transform parent = gameObject.transform.parent;
+            pointA = parent.Find("PointA");
+            pointB = parent.Find("PointB");
+
+            if(pointA == null || pointB == null){
+                Debug.LogError("Enemy is missing destination points");
+            }
+
+            currentDestination = pointA;
         }
-
-        currentDestination = pointA;
     }
 
     // Update is called once per frame
@@ -40,6 +45,11 @@ public class FishDefault : MonoBehaviour
     }
 
     void movementHandler(){
+        // Don't move if it's a sea urchin
+        if(isUrchin){
+            return;
+        }
+
         Vector2 direction = currentDestination.position - transform.position;
         rb.velocity = direction.normalized * speed;
 
