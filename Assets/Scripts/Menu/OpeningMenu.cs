@@ -20,7 +20,7 @@ public class OpeningMenu : MonoBehaviour
     
 
     public void onClickTutorialButton(){
-        Debug.Log("Loaded tutorial scene");
+        SceneManager.LoadScene("Tutorial");
     }
 
 

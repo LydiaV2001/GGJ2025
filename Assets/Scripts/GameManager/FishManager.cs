@@ -44,6 +44,7 @@ namespace GameManager
 
         public static void CollectFish(string fishName)
         {
+            Debug.Log(fishName);
             if (FishFound.ContainsKey(fishName))
             {
                 FishFound[fishName] = true;
@@ -59,7 +60,7 @@ namespace GameManager
                 Victory();
             }
 
-            if(FishFound[ROCK]){
+            if(fishName == "Rock"){
                 SceneManager.LoadScene("MainMenu");
             }
             
