@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void handleMovement(){
-        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal") * speed, rb.velocity.y);
+        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal") * speed * horizontalSpeed, rb.velocity.y);
         rb.velocity = direction;
     }
     
