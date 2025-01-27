@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player;
 
 public class PlayerAnimation : MonoBehaviour
 {
 
     private Animator animator;
     private Rigidbody2D rb;
+    PlayerHealth playerHealth;
     
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        playerHealth = gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         jumpAnimation();
         moveAnimation();
+        deathAnimation();
     }
 
     void jumpAnimation(){
@@ -43,4 +47,12 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool("walking", false);
         }
     }
+
+    void deathAnimation(){
+        if(playerHealth.currentHealth <= 0){
+          animator.SetBool("Dead", true);  
+        }
+    }
+
+
 }

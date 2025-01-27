@@ -12,6 +12,8 @@ namespace Player
         public float healthDecayRate;
         public float currentHealth;
 
+        public bool dead = false;
+
         Transform bubbleTransform;
         public GameObject gameOverUI;
         
@@ -27,14 +29,15 @@ namespace Player
             if (currentHealth > 0)
             {
                 currentHealth -= healthDecayRate * Time.deltaTime;
+                scaleBubble();
             }
             else
             {
-                Time.timeScale = 0f;
+                dead = true;
+                bubbleTransform.localScale = new Vector3(0, 0, 1);
                 gameOverUI.SetActive(true);
             }
 
-            scaleBubble();
         }
 
         public void IncreaseHealth(float amount)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Player;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,9 +37,11 @@ public class PlayerMovement : MonoBehaviour
     public static KeyCode jumpKey = KeyCode.Space;
     public static KeyCode bounceKey = KeyCode.LeftShift;
 
-    
+    PlayerHealth playerHealth;
+
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerHealth = gameObject.GetComponent<PlayerHealth>();
 
         if(rb == null){
             Debug.LogError("Player is missing the rigidbody");
@@ -50,10 +53,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void FixedUpdate(){
+        if(playerHealth.dead){
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
         handleMovement();
     }
 
     void Update(){
+
+        if(playerHealth.dead){
+            return;
+        }
+
         jumpHandler();
         slamHandler();
         flipSprite();
