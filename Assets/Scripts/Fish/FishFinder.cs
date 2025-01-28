@@ -15,6 +15,7 @@ public class FishFinder : MonoBehaviour
     public GameObject fishDescriptionBackground;
     public TextMeshProUGUI fishDescriptionText;
     public GameObject playerIconBackground;
+    public GameObject darkeningBackground;
 
     bool clipboardIsOpen = false;
 
@@ -92,12 +93,14 @@ public class FishFinder : MonoBehaviour
     }
 
     void openFishUI(){
+        darkeningBackground.SetActive(true);
         clipboardUI.SetActive(true);
         fishDescriptionBackground.SetActive(true);
         playerIconBackground.SetActive(true);
     }
 
     void closeFishUI(){
+        darkeningBackground.SetActive(false);
         clipboardUI.SetActive(false);
         fishDescriptionBackground.SetActive(false);
         playerIconBackground.SetActive(false);

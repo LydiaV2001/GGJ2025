@@ -358,8 +358,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -442,7 +442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -389.44, y: -178.06}
+  m_AnchoredPosition: {x: -392.15, y: -177.36}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &220583458
@@ -492,8 +492,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -576,7 +576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -356.91, y: -170.83}
+  m_AnchoredPosition: {x: -358.5, y: -170.18}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362984388
@@ -599,10 +599,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Some jumps are too high to make,
-
-    So jump, then in mid air press "shift"
-    to bounce'
+  m_text: "Some jumps are too high to make,\nSo jump, then in mid air press \"shift\"
+    \nto bounce"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -629,8 +627,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 0.9
+  m_fontSizeBase: 0.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -861,7 +859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379, y: -175.49}
+  m_AnchoredPosition: {x: -381.85, y: -174.04}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592135244
@@ -913,8 +911,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -949,7 +947,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 92.930115, y: 22.770966, z: 94.59602, w: 24.073427}
+  m_margin: {x: 92.930115, y: 22.770966, z: 92.72949, w: 24.073427}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -997,7 +995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.09, y: -172.8}
+  m_AnchoredPosition: {x: -366.86, y: -172.33}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602286356
@@ -1020,9 +1018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Collect bubbles to refill
-
-    your air'
+  m_text: "Collect bubbles \nto refill your air"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1049,8 +1045,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1085,7 +1081,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 92.930115, y: 22.770966, z: 97.09921, w: 24.555092}
+  m_margin: {x: 92.930115, y: 22.770966, z: 94.85937, w: 24.555092}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1099,6 +1095,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602286354}
   m_CullTransparentMesh: 1
+--- !u!1 &665287704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1769585376998348991, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+  m_PrefabInstance: {fileID: 1504823529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &764068709
 GameObject:
   m_ObjectHideFlags: 0
@@ -97533,6 +97534,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1504823534}
     - target: {fileID: 991796336494850685, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: darkeningBackground
+      value: 
+      objectReference: {fileID: 665287704}
+    - target: {fileID: 991796336494850685, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: fishDescriptionText
       value: 
       objectReference: {fileID: 1504823530}
@@ -97592,6 +97597,30 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: clipboardUI
+      value: 
+      objectReference: {fileID: 1504823534}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: darkeningBackground
+      value: 
+      objectReference: {fileID: 665287704}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: fishDescriptionText
+      value: 
+      objectReference: {fileID: 1504823530}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: fishImageBackground
+      value: 
+      objectReference: {fileID: 1504823533}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: playerIconBackground
+      value: 
+      objectReference: {fileID: 1504823532}
+    - target: {fileID: 4045929541094572798, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
+      propertyPath: fishDescriptionBackground
+      value: 
+      objectReference: {fileID: 1504823531}
     - target: {fileID: 4552363404536819136, guid: 81b2de626f107c54598c5d0ed389c215, type: 3}
       propertyPath: orthographic size
       value: 7
@@ -103440,21 +103469,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4113784698240571389, guid: 2789276107f171d41a90cdb02e725534, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717622535389529792, guid: 2789276107f171d41a90cdb02e725534, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5658894132129256886, guid: 2789276107f171d41a90cdb02e725534, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8464176848595566377, guid: 2789276107f171d41a90cdb02e725534, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216546372781671114, guid: 2789276107f171d41a90cdb02e725534, type: 3}
+      propertyPath: m_Color.a
+      value: 0.90588236
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -103654,7 +103675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340.64, y: -168.89}
+  m_AnchoredPosition: {x: -342.09, y: -167.82}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1680014379
@@ -103678,7 +103699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press 'e' near a fish to study it. \nThen press 'e' again to continue\nMost
-    fish are friendly and won't hurt you\n"
+    fish are friendly and won't \nhurt you\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -103705,8 +103726,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 0.8
+  m_fontSizeBase: 0.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -103977,7 +103998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.43, y: -168.18}
+  m_AnchoredPosition: {x: -310.34, y: -167.95}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927881551
@@ -104027,8 +104048,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 0.9
+  m_fontSizeBase: 0.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -104168,7 +104189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -325.51, y: -169.38}
+  m_AnchoredPosition: {x: -327.33, y: -167.23}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049184282
@@ -104219,8 +104240,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.7
-  m_fontSizeBase: 0.7
+  m_fontSize: 0.9
+  m_fontSizeBase: 0.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

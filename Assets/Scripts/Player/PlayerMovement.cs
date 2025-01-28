@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
             slam = false;
             rb.sharedMaterial = defaultMaterial;
             horizontalSpeed = speedBonusOnSlam;
-            Invoke("resetHorizontalSpeed", 0.8f);
+            Invoke("resetHorizontalSpeed", 0.5f);
         }
     }
 

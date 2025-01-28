@@ -67,7 +67,6 @@ namespace GameManager
 
         private static void Victory()
         {
-            Time.timeScale = 0;
             SceneManager.LoadScene("End");
         }
 
